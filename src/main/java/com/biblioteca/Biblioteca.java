@@ -4,10 +4,10 @@ import java.util.ArrayList;
 
 public class Biblioteca {
 
-    private final ArrayList<Livro> livros;
-    private final ArrayList<Autor> autores;
-    private final ArrayList<Editora> editoras;
-    private final ArrayList<LivroEstoque> estoque;
+    public final ArrayList<Livro> livros;
+    public final ArrayList<Autor> autores;
+    public final ArrayList<Editora> editoras;
+    public final ArrayList<LivroEstoque> estoque;
 
     public Biblioteca() {
         livros = new ArrayList<Livro>();
@@ -47,4 +47,6 @@ public class Biblioteca {
     public void RemoverEstoque(LivroEstoque livroEstoque) {
         this.estoque.remove(livroEstoque);
     }
+
+
 }
