@@ -37,6 +37,23 @@ public class LivroVendaTest {
     }
 
     @Test
+    public void testRetornaFalsoQuandoQuantidadeEZero() {
+        // Arrange
+
+        LivroVenda livroVenda = mockLivroVenda();
+        livroVenda.quantidade = 0;
+
+        // Act
+
+        boolean result = livroVenda.DecrementarQuantidade();
+
+        // Assert
+
+        assertEquals(0, livroVenda.quantidade);
+        assertFalse(result);
+    }
+
+    @Test
     public void testDecrementarQuantidadeByOne() {
         // Arrange
 

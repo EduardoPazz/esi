@@ -5,10 +5,6 @@ public class LivroVenda {
     public LivroEstoque livroDoEstoque;
     public int quantidade;
 
-    public LivroVenda() {
-
-    }
-
     public LivroVenda(LivroEstoque livroDoEstoque, int quantidade) {
         this.livroDoEstoque = livroDoEstoque;
         this.quantidade = quantidade;

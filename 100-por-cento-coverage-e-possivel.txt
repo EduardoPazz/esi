@@ -1,0 +1,1 @@
+sim, como demonstra o arquivo jacoco-coverage-report.png
